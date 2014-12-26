@@ -26,7 +26,7 @@ MAINTAINER imesh@apache.org
 # Install PHP
 ##################
 RUN apt-get install -y apache2 php5 zip stress
-RUN rm /etc/apache2/sites-enabled/000-default.conf
+RUN rm -f /etc/apache2/sites-enabled/000-default.conf
 ADD files/000-default.conf /etc/apache2/sites-enabled/000-default.conf
 
 EXPOSE 80
