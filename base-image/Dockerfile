@@ -47,7 +47,7 @@ RUN pip install pexpect
 # -------------------------
 WORKDIR /mnt/
 ADD packs/apache-stratos-python-cartridge-agent-4.1.0-SNAPSHOT.zip /mnt/apache-stratos-python-cartridge-agent-4.1.0-SNAPSHOT.zip
-RUN unzip -q /mnt/apache-stratos-python-cartridge-agent-4.1.0-SNAPSHOT.zip
+RUN unzip -q /mnt/apache-stratos-python-cartridge-agent-4.1.0-SNAPSHOT.zip -d /mnt/apache-stratos-python-cartridge-agent-4.1.0-SNAPSHOT/
 RUN rm /mnt/apache-stratos-python-cartridge-agent-4.1.0-SNAPSHOT.zip
 
 RUN mkdir -p /mnt/apache-stratos-python-cartridge-agent-4.1.0-SNAPSHOT/payload
