@@ -20,7 +20,7 @@
 ## --------------------------------------------------------------
 #
 #
-<VirtualHost *:8080>
+<VirtualHost *:80>
 	ServerAdmin webmaster@localhost
 
 	DocumentRoot APP-PATH
