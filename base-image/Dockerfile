@@ -50,8 +50,6 @@ ADD packs/apache-stratos-python-cartridge-agent-4.1.0-SNAPSHOT.zip /mnt/apache-s
 RUN unzip -q /mnt/apache-stratos-python-cartridge-agent-4.1.0-SNAPSHOT.zip -d /mnt/apache-stratos-python-cartridge-agent-4.1.0-SNAPSHOT/
 RUN rm /mnt/apache-stratos-python-cartridge-agent-4.1.0-SNAPSHOT.zip
 RUN mkdir -p /mnt/apache-stratos-python-cartridge-agent-4.1.0-SNAPSHOT/payload
-RUN mkdir -p /mnt/apache-stratos-python-cartridge-agent-4.1.0-SNAPSHOT/extensions
-ADD packs/extensions /mnt/apache-stratos-python-cartridge-agent-4.1.0-SNAPSHOT/extensions
 RUN chmod +x /mnt/apache-stratos-python-cartridge-agent-4.1.0-SNAPSHOT/extensions/*
 RUN mkdir -p /var/log/apache-stratos/
 RUN touch /var/log/apache-stratos/cartridge-agent-extensions.log
